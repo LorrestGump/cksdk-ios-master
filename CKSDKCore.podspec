@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "http://github.com/BestRivenV/cksdk-ios-master"
 
-  s.license      = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
+  s.license      = { :type => 'Proprietary', :text => ''}
   s.author       = 'YaYaWan'
   s.requires_arc = true
   s.platform     = :ios
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   }
 
   s.ios.deployment_target = '12.0'
-  s.ios.frameworks        = 'AdServices', 'AdSupport'
+  s.ios.frameworks        = ['AdServices', 'AdSupport']
   s.vendored_frameworks   = 'CKSDKCore.xcframework'
 
   s.subspec 'ProtocalKit' do |a|
@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
     a.public_header_files = 'AppsFlyerIntegration/**/*.h'
     a.dependency 'CKSDKCore/ProtocalKit'
     a.dependency 'AppsFlyerFramework'
-    a.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+  #  a.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
   end
 
 end
