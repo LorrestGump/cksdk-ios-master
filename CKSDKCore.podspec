@@ -26,9 +26,21 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = 'CKSDKCore.xcframework' 
 
 
+  s.subspec 'ProtocolKit' do |a| # 使用更简洁的名称，如 'ProtocolKit'
+    a.source_files = 'CKSDKProtocolKit/**/*.{h,m,swift}'
+    a.public_header_files = 'CKSDKProtocolKit/**/*.h'
+    # 注意：不需要再次设置 a.static_framework，它会继承主规格的设置。
+  end
+
   s.subspec 'AppsFlyerIntegration' do |a|
     a.source_files = 'AppsFlyerIntegration/**/*.{h,m,swift}'
     a.public_header_files = 'AppsFlyerIntegration/**/*.h'
+    
+    # 核心设置 1: 依赖同一个 Podspec 中的另一个 Subspec
+    # 格式为 'PodName/SubspecName'。如果 Subspec 与主 Pod 同名，可以简写。
+    # 这里是 'CKSDKCore/ProtocolKit'
+    a.dependency 'CKSDKCore/ProtocolKit'
+
     a.dependency 'AppsFlyerFramework'
     # 【重点】静态库依赖动态库，必须添加链接标志
     a.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
