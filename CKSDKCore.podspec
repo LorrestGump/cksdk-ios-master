@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version      = "2.0.0"
   s.summary      = "CKSDKCore iOS SDK"
 
-  s.homepage     = "http://github.com/BestRivenV/cksdk-ios-master"
+  s.homepage     = "http://github.com/LorrestGump/cksdk-ios-master"
 
   s.license      = { :type => 'Proprietary', :text => ''}
   s.author       = 'YaYaWan'
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   :tag => s.version.to_s,
   # }
    s.source       = { 
-     http: "https://github.com/BestRivenV/cksdk-ios-master/releases/download/v2.0.0-beta.1/CKSDKCore.xcframework.zip",
+     http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.0/CKSDKCore.xcframework.zip",
      sha256: "4499ab0ddcb2da41806a5355227e5b24dc3a72ea0f83d6ec437fb94dff30e067"
   }
 
