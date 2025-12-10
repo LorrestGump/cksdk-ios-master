@@ -11,16 +11,16 @@ Pod::Spec.new do |s|
   s.static_framework = true
 
   s.version          = "2.0.0"
-  s.source           = {
-    :git => 'https://github.com/BestRivenV/cksdk-ios-master.git',
+  s.source           = { 
+    :git => 'https://github.com/BestRivenV/cksdk-ios-master.git', 
     :tag => s.version.to_s,
   }
 
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = 'AdServices', 'AdSupport'
-  s.vendored_frameworks   = 'CKSDKCore.xcframework'
+  s.vendored_frameworks   = 'CKSDKCore.xcframework' 
 
-  s.subspec 'ProtocalKit' do |a|
+  s.subspec 'ProtocalKit' do |a| 
     a.source_files    = 'CKSDKProtocalKit/**/*.{h,m,swift}'
     a.public_header_files = 'CKSDKProtocalKit/**/*.h'
   end
@@ -32,5 +32,5 @@ Pod::Spec.new do |s|
     a.dependency 'AppsFlyerFramework'
     a.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
   end
-
+#uiuiuui
 end
