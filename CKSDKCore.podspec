@@ -6,12 +6,12 @@ Pod::Spec.new do |s|
   s.license = { :type => 'Proprietary', :text => ''}
   s.author = 'YaYaWan'
   s.requires_arc = true
-  s.platform = :ios
+  s.platform = :ios, '12.0'
   s.swift_version = '5.0'
   s.static_framework = true
   s.source = {
     :git => 'https://github.com/LorrestGump/cksdk-ios-master.git',
-    :commit => 'aa3e8d30d54e331f82f86fb1c9735311381d936b',
+    :tag => s.version.to_s,
   }
   s.ios.deployment_target = '12.0'
   s.ios.frameworks = ['AdServices','AdSupport']
