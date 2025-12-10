@@ -30,17 +30,17 @@ Pod::Spec.new do |s|
   s.ios.frameworks        = ['AdServices', 'AdSupport']
   s.vendored_frameworks   = 'CKSDKCore.xcframework'
 
-  s.subspec 'ProtocalKit' do |a|
-    a.source_files        = 'CKSDKProtocalKit/**/*.{h,m,swift}'
-    a.public_header_files = 'CKSDKProtocalKit/**/*.h'
-  end
+  # s.subspec 'ProtocalKit' do |a|
+  #   a.source_files        = 'CKSDKProtocalKit/**/*.{h,m,swift}'
+  #   a.public_header_files = 'CKSDKProtocalKit/**/*.h'
+  # end
 
-  s.subspec 'AppsFlyerIntegration' do |a|
-    a.source_files        = 'AppsFlyerIntegration/**/*.{h,m,swift}'
-    a.public_header_files = 'AppsFlyerIntegration/**/*.h'
-    a.dependency 'CKSDKCore/ProtocalKit'
-    a.dependency 'AppsFlyerFramework'
-  #  a.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
-  end
+  # s.subspec 'AppsFlyerIntegration' do |a|
+  #   a.source_files        = 'AppsFlyerIntegration/**/*.{h,m,swift}'
+  #   a.public_header_files = 'AppsFlyerIntegration/**/*.h'
+  #   a.dependency 'CKSDKCore/ProtocalKit'
+  #   a.dependency 'AppsFlyerFramework'
+  # #  a.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
+  # end
 
 end
