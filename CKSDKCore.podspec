@@ -16,7 +16,8 @@ Pod::Spec.new do |s|
   s.source = {
     :git => 'https://github.com/LorrestGump/cksdk-ios-master.git',
     # :tag => s.version.to_s,
-    :tag => '2.0.0',
+    # :tag => '2.0.0',
+    :commit => 'aa3e8d30d54e331f82f86fb1c9735311381d936b',
   }
   # s.source       = { 
   #    http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.0/CKSDKCore.xcframework.zip",
