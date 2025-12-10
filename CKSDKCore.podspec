@@ -4,16 +4,27 @@ Pod::Spec.new do |s|
   s.summary         = "CKSDKCore iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => ''}
-  s.author          = 'YaYaWan'
+  s.authors         = 'YaYaWan'
   s.requires_arc    = true
   s.platform        = :ios
   s.swift_version   = '5.0'
   s.static_framework = true
-  s.source          = { 
-     http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.0/CKSDKCore.xcframework.zip",
-     sha256: "4499ab0ddcb2da41806a5355227e5b24dc3a72ea0f83d6ec437fb94dff30e067"
+  # s.source          = { 
+  #    http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.0/CKSDKCore.xcframework.zip",
+  #    sha256: "4499ab0ddcb2da41806a5355227e5b24dc3a72ea0f83d6ec437fb94dff30e067"
+  # }
+  s.source = {
+    :git => 'https://github.com/LorrestGump/cksdk-ios-master.git',
+    :tag => s.version.to_s,
   }
   s.ios.deployment_target = '12.0'
-  s.ios.frameworks        = ['AdServices','AdSupport']
+  s.ios.frameworks        = ['Foundation', 'UIKit', 'AdServices', 'AdSupport']
   s.vendored_frameworks   = 'CKSDKCore.xcframework'
+
+  s.subspec 'ProtocalKit' do |a|
+    a.source_files        = 'CKSDKProtocalKit/**/*.{h,m,swift}'
+    a.public_header_files = 'CKSDKProtocalKit/**/*.h'
+    a.frameworks          = 'Foundation', 'UIKit'
+    a.requires_arc        = true
+  end
 end
