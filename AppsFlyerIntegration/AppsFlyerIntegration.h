@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CKSDKProtocalKit/CKSDKProtocalKit.h>
+//#import <CKSDKProtocalKit/CKSDKProtocalKit.h>
+#import "CKSDKProtocalKit.h"
 
 
 #define AFInt [AppsFlyerIntegration shared]
