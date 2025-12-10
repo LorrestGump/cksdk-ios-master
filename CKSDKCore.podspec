@@ -21,9 +21,13 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.static_framework = true
 
-  s.source       = {
-    :git => 'https://github.com/BestRivenV/cksdk-ios-master.git',
-    :tag => s.version.to_s,
+  # s.source       = {
+  #   :git => 'https://github.com/BestRivenV/cksdk-ios-master.git',
+  #   :tag => s.version.to_s,
+  # }
+   s.source       = { 
+     http: "https://github.com/BestRivenV/cksdk-ios-master/releases/download/v2.0.0-beta.1/CKSDKCore.xcframework.zip",
+     sha256: "4499ab0ddcb2da41806a5355227e5b24dc3a72ea0f83d6ec437fb94dff30e067"
   }
 
   s.ios.deployment_target = '12.0'
