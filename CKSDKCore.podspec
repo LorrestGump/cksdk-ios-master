@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.platform     = :ios
   s.swift_version = '5.0'
+  # 一旦设置主库，所有子库都会和主库统一，不能混合静态库和动态库
   s.static_framework = true
 
   s.source       = { 
@@ -28,12 +29,11 @@ Pod::Spec.new do |s|
   s.subspec 'AppsFlyerIntegration' do |a|
     a.source_files = 'AppsFlyerIntegration/**/*.{h,m,swift}'
     a.public_header_files = 'AppsFlyerIntegration/**/*.h'
-    a.static_framework = true
     a.dependency 'AppsFlyerFramework'
     # 【重点】静态库依赖动态库，必须添加链接标志
     a.user_target_xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
     # 如果 LibraryA 需要额外的 Framework 或配置，都在这里添加
-  End
+  end
 
 
 
