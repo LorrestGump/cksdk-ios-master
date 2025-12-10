@@ -19,15 +19,7 @@ Pod::Spec.new do |s|
     # 必须包含 Git 信息，这样 pod spec lint 才能克隆源码
     :git => 'https://github.com/BestRivenV/cksdk-ios-master.git', 
     :tag => s.version.to_s,
-  
-    # 如果您仍然需要通过 HTTP URL 下载预编译文件，可以保持 vendored_frameworks 不变，
-    # 但对于源码验证，Git 信息是必需的。
   }
-#  s.source       = { 
-#      http: "https://github.com/BestRivenV/cksdk-ios-master/releases/download/v2.0.0-beta.1/CKSDKCore.xcframework.zip",
-#      sha256: "4499ab0ddcb2da41806a5355227e5b24dc3a72ea0f83d6ec437fb94dff30e067"
-#  }
-
 
   s.ios.deployment_target = '12.0'
 
