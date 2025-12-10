@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   # 一旦设置主库，所有子库都会和主库统一，不能混合静态库和动态库
   s.static_framework = true
 
-  s.version      = "v2.0.0-beta.1"
+  s.version      = "2.0.0"
   s.source       = { 
     # 必须包含 Git 信息，这样 pod spec lint 才能克隆源码
     :git => 'https://github.com/BestRivenV/cksdk-ios-master.git', 
