@@ -1,0 +1,11 @@
+framework module AppsFlyerIntegration {
+  umbrella header "AppsFlyerIntegration.h"
+  export *
+
+  module * { export * }
+}
+
+module AppsFlyerIntegration.Swift {
+  header "AppsFlyerIntegration-Swift.h"
+  requires objc
+}
