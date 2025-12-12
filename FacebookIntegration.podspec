@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.static_framework = false
   s.source          = { 
      http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.0/FacebookIntegration.xcframework.zip",
-     sha256: "b9dc85d0849785522d0f052462e4a437b75fbef86f3fca237f5ac1d2bd684d9b"
+     sha256: "168c3d06ff1a2cb89e8be5520574a7063a3c91f25172c6e2e0b533a064d8b387"
   }
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
