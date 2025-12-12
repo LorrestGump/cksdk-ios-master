@@ -1,6 +1,0 @@
-framework module CKSDKProtocalKit {
-  umbrella header "CKSDKProtocalKit.h"
-  export *
-
-  module * { export * }
-}
