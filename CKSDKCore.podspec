@@ -8,7 +8,6 @@ Pod::Spec.new do |s|
   s.requires_arc    = true
   s.platform        = :ios
   s.swift_version   = '5.0'
-  s.dynamic_framework = true
   s.static_framework = false
   s.source          = { 
      http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.0/CKSDKCore.xcframework.zip",
