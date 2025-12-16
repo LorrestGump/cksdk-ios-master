@@ -16,6 +16,11 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit', 'AdServices', 'AdSupport']
   s.ios.vendored_frameworks   = 'CKSDKCore.xcframework'
+  s.dependency 'MBProgressHUD'
   s.dependency 'CKSDKProtocalKit'
+
+  s.pod_target_xcconfig = {
+    'OTHER_LDFLAGS' => '-ObjC'
+  }
 
 end
