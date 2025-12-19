@@ -19,5 +19,9 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'Google-Mobile-Ads-SDK'
   s.dependency 'GoogleUserMessagingPlatform'
+  
+  s.pod_target_xcconfig = {
+    'OTHER_LDFLAGS' => '$(inherited) -lc++ -ObjC',
+  }
 
 end
