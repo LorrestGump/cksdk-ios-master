@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.static_framework = false
   s.source          = { 
      http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.2/NaverFramework.zip",
-     sha256: "eddd485ce9d4e3d2d002ab09e699555752a3219c3f3624c2c0ec24516ed50c7f"
+     sha256: "ddeaa5b55a1c4153e29ed798956bb46ecd79dd514fae4e22c55f1b0be1cd2cc7"
   }
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
 
   s.pod_target_xcconfig = {
-    'OTHER_LDFLAGS' => '-ObjC -lc++'
+    'OTHER_LDFLAGS' => '-ObjC -lc++',
   }
 
 end
