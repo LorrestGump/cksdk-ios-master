@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.source          = { 
      http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.2/AppsFlyerIntegration.xcframework.zip",
-     sha256: "eea05e08225d4dc59ebb1966db9621255e1c82aa9b1ca8dc494431d8e87f7850"
+     sha256: "77cea48eadd4f8e8d82532b1241903b516edd4a9fb1daa2f3eb084bad47e378f"
   }
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']

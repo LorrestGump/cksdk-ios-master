@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AdMobIntegration"
-  s.version         = "2.0.1"
+  s.version         = "2.0.2"
   s.summary         = "AdMobIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.swift_version   = '5.0'
   s.static_framework = false
   s.source          = { 
-     http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.1/AdMobIntegration.xcframework.zip",
-     sha256: "aaee0cf913a6a783d65a5c8095e14fa245195a454ff0d1fc2b5213ac3762c7cb"
+     http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.2/AdMobIntegration.xcframework.zip",
+     sha256: "4a562da5571c88976fe34f501889bd98a7d17944ba37344583042f8f59c1366e"
   }
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "FirebaseIntegration"
-  s.version         = "2.0.0"
+  s.version         = "2.0.2"
   s.summary         = "FirebaseIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.swift_version   = '5.0'
   s.static_framework = false
   s.source          = { 
-     http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.0/FirebaseIntegration.xcframework.zip",
-     sha256: "71c6c84421c23c2aa33a2b57da06e8b93fc5de255af3f88509c45f546f051675"
+     http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.2/FirebaseIntegration.xcframework.zip",
+     sha256: "c46f14ae6cbfd0f410dc407fe4afbabf8376d9934523a4355f042605ac2b5690"
   }
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
