@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.static_framework = false
   s.source          = { 
      http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.2/AdMobIntegration.xcframework.zip",
-     sha256: "4a562da5571c88976fe34f501889bd98a7d17944ba37344583042f8f59c1366e"
+     sha256: "23ac500ec16da20ff56f46f2c7f5cd196727f609bc14e7e99cf75241df3c6b12"
   }
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
