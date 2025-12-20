@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
 
   s.pod_target_xcconfig = {
-    'OTHER_LDFLAGS' => '-ObjC','-lc++'
+    'OTHER_LDFLAGS' => '-ObjC -lc++'
   }
 
 end
