@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AppsFlyerIntegration"
-  s.version         = "2.0.2"
+  s.version         = "2.0.3"
   s.summary         = "AppsFlyerIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -9,13 +9,13 @@ Pod::Spec.new do |s|
   s.platform        = :ios
   s.swift_version   = '5.0'
   s.static_framework = true
-  s.source          = { 
-     http: "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.0.2/AppsFlyerIntegration.xcframework.zip",
-     sha256: "77cea48eadd4f8e8d82532b1241903b516edd4a9fb1daa2f3eb084bad47e378f"
-  }
+  s.source          = { :git => "https://github.com/LorrestGump/cksdk-ios-master.git", :tag => s.version.to_s }
+  s.source_files = 'Integrations/AppsFlyerIntegration/**/*.{h,m,swift}'  
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
-  s.ios.vendored_frameworks   = 'AppsFlyerIntegration.xcframework'
+
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'AppsFlyerFramework'
+
+  s.pod_target_xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/VKID' }
 end
