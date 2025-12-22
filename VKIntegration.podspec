@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors         = 'YaYaWan'
   s.requires_arc    = true
   s.platform        = :ios
-  s.swift_version   = '6.0'
+  s.swift_version   = '5.0'
   s.static_framework = true
   s.source          = { :git => "https://github.com/LorrestGump/cksdk-ios-master.git", :tag => s.version.to_s }
   s.source_files = 'Integrations/VKIntegration/**/*.{h,m,swift}'
@@ -17,8 +17,13 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'VKID', '~> 2.2'
 
-  # 推荐：如果您的 OC 代码需要引用 Swift 模块，添加此行
-  # s.pod_target_xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/VKID' }
-  s.pod_target_xcconfig     = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => true }
+  s.pod_target_xcconfig = {
+    # 强制启用 Module Stability
+    'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES', 
+    # 确保 Swift 编译器知道去哪里找依赖的模块
+    'SWIFT_INCLUDE_PATHS' => '$(inherited)', 
+    # 确保语言版本一致（虽然 s.swift_version 应该已经设置了，但此处冗余设置可提高稳定性）
+    'SWIFT_VERSION' => '5.0'
+}
 
 end
