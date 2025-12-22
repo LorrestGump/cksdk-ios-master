@@ -8,10 +8,10 @@ Pod::Spec.new do |s|
   s.requires_arc    = true
   s.platform        = :ios
   s.swift_version   = '5.0'
-  s.static_framework = true
+  # s.static_framework = true
   s.source          = { :git => "https://github.com/LorrestGump/cksdk-ios-master.git", :tag => s.version.to_s }
   s.source_files = 'Integrations/VKIntegration/**/*.{h,m,swift}'
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
 
   s.dependency 'CKSDKProtocalKit'
