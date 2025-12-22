@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.authors         = 'YaYaWan'
   s.requires_arc    = true
   s.platform        = :ios
-  s.swift_version   = '5.0'
+  s.swift_version   = '6.0'
   s.static_framework = true
   s.source          = { :git => "https://github.com/LorrestGump/cksdk-ios-master.git", :tag => s.version.to_s }
   s.source_files = 'Integrations/VKIntegration/**/*.{h,m,swift}'
