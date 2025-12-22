@@ -18,6 +18,6 @@ Pod::Spec.new do |s|
   s.dependency 'VKID', '~> 2.2'
 
   # 推荐：如果您的 OC 代码需要引用 Swift 模块，添加此行
-  s.pod_target_xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/VKID' }
+  # s.pod_target_xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/VKID' }
 
 end
