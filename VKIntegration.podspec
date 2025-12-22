@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
   s.authors         = 'YaYaWan'
   s.requires_arc    = true
-  s.platform        = :ios, '12.0'
+  s.platform        = :ios
   s.swift_version   = '5.0'
   # s.static_framework = false
   # s.source          = { 
