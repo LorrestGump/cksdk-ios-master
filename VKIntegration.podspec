@@ -26,4 +26,7 @@ Pod::Spec.new do |s|
   #   'SWIFT_VERSION' => '5.0'
   # }
 
+  s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'SWIFT_INCLUDE_PATHS' => '$(inherited)' }
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
+
 end
