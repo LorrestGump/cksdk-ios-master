@@ -14,7 +14,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
 
-  spec.resource_bundles = {
+  s.resource_bundles = {
     'FacebookIntegration-Resources' => ['Integrations/FacebookIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   }
 

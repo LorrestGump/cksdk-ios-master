@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'AppsFlyerFramework'
 
-  spec.resource_bundles = {
+  s.resource_bundles = {
     'AppsFlyerIntegration-Resources' => ['Integrations/AppsFlyerIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   }
 

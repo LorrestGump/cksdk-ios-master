@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.dependency 'Google-Mobile-Ads-SDK'
   s.dependency 'GoogleUserMessagingPlatform'
 
-  spec.resource_bundles = {
+  s.resource_bundles = {
     'AdMobIntegration-Resources' => ['Integrations/AdMobIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   }
   

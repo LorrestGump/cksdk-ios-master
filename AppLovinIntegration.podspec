@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   ]
   s.dependency 'CKSDKProtocalKit'
 
-  spec.resource_bundles = {
+  s.resource_bundles = {
     'AppLovinIntegration-Resources' => ['Integrations/AppLovinIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   }
 

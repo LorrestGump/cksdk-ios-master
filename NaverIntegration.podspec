@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   ]
   s.dependency 'CKSDKProtocalKit'
 
-  spec.resource_bundles = {
+  s.resource_bundles = {
     'NaverIntegration-Resources' => ['Integrations/NaverIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   }
 

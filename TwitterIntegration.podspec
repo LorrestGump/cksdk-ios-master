@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'TwitterKit5'
 
-  spec.resource_bundles = {
+  s.resource_bundles = {
     'TwitterIntegration-Resources' => ['Integrations/TwitterIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   }
 

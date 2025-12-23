@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.dependency 'VKID', '~> 2.2'
 
-  # spec.resource_bundles = {
+  # s.resource_bundles = {
   #   'VKIDBridge-Resources' => ['Integrations/VKIDBridge/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   # }
 
