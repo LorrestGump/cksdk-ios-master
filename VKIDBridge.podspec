@@ -16,9 +16,9 @@ Pod::Spec.new do |s|
 
   s.dependency 'VKID', '~> 2.2'
 
-  spec.resource_bundles = {
-    'VKIntegration-Resources' => ['Integrations/VKIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
-  }
+  # spec.resource_bundles = {
+  #   'VKIDBridge-Resources' => ['Integrations/VKIDBridge/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+  # }
 
 
   # s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'SWIFT_INCLUDE_PATHS' => '$(inherited)' }
