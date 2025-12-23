@@ -9,7 +9,7 @@
 
 //#import "CKSDKProj-Swift.h"
 //#import "ConclusionKit/ConclusionKit-Swift.h"
-#import "VKIntegration/VKIntegration-Swift.h"
+#import <VKIntegration/VKIntegration-Swift.h>
 
 @interface VKIDManager()
 @property (strong, nonatomic) VKIDBridge *bridge;
