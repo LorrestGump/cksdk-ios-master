@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AppsFlyerIntegration"
-  s.version         = "2.0.3"
+  s.version         = "2.0.4"
   s.summary         = "AppsFlyerIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -17,5 +17,9 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'AppsFlyerFramework'
 
-  s.pod_target_xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/VKID' }
+  spec.resource_bundles = {
+    'AppsFlyerIntegration-Resources' => ['Integrations/AppsFlyerIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+  }
+
+  # s.pod_target_xcconfig     = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/VKID' }
 end

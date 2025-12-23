@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AppLovinIntegration"
-  s.version         = "2.0.3"
+  s.version         = "2.0.4"
   s.summary         = "FacebookIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -18,6 +18,10 @@ Pod::Spec.new do |s|
     'Frameworks/applovin-ios-sdk-13.5.1/AppLovinSDK.xcframework'
   ]
   s.dependency 'CKSDKProtocalKit'
+
+  spec.resource_bundles = {
+    'AppLovinIntegration-Resources' => ['Integrations/AppLovinIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+  }
 
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '-ObjC'

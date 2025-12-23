@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "AdMobIntegration"
-  s.version         = "2.0.3"
+  s.version         = "2.0.4"
   s.summary         = "AdMobIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -17,10 +17,13 @@ Pod::Spec.new do |s|
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'Google-Mobile-Ads-SDK'
   s.dependency 'GoogleUserMessagingPlatform'
+
+  spec.resource_bundles = {
+    'AdMobIntegration-Resources' => ['Integrations/AdMobIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+  }
   
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '$(inherited) -lc++ -ObjC',
-    'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/VKID'
   }
 
 end

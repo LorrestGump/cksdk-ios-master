@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "FacebookIntegration"
-  s.version         = "2.0.3"
+  s.version         = "2.0.4"
   s.summary         = "FacebookIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -13,6 +13,10 @@ Pod::Spec.new do |s|
   s.source_files = 'Integrations/FacebookIntegration/**/*.{h,m,swift}'
   s.ios.deployment_target = '12.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
+
+  spec.resource_bundles = {
+    'FacebookIntegration-Resources' => ['Integrations/FacebookIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+  }
 
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'FBAEMKit'

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "NaverIntegration"
-  s.version         = "2.0.3"
+  s.version         = "2.0.4"
   s.summary         = "NaverIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -18,6 +18,10 @@ Pod::Spec.new do |s|
     'Frameworks/NaverGame-1.3.12/NNGSDK/NNGSDK.xcframework'
   ]
   s.dependency 'CKSDKProtocalKit'
+
+  spec.resource_bundles = {
+    'NaverIntegration-Resources' => ['Integrations/NaverIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+  }
 
   s.pod_target_xcconfig = {
     'OTHER_LDFLAGS' => '-ObjC -lc++',

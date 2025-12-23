@@ -7,12 +7,12 @@
 
 #import "VKIDManager.h"
 
-//#import "CKSDKProj-Swift.h"
-//#import "ConclusionKit/ConclusionKit-Swift.h"
-#import <VKIntegration/VKIntegration-Swift.h>
+//#import <VKIntegration/VKIntegration-Swift.h>
+
+#import <VKIDBridge/VKIDBridge-Swift.h>
 
 @interface VKIDManager()
-@property (strong, nonatomic) VKIDBridge *bridge;
+@property (strong, nonatomic) VKIDInterface *bridge;
 @end
 
 @implementation VKIDManager
@@ -30,7 +30,7 @@
 }
 
 -(void)ConFigWithClientID:(NSString *)clientID clientSecret:(NSString *)clientSecret{
-    self.bridge = [VKIDBridge new];
+    self.bridge = [VKIDInterface new];
     [self.bridge configWithClientId:clientID clientSecret:clientSecret];
 }
 

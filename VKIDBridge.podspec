@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name            = "FirebaseIntegration"
+  s.name            = "VKIDBridge"
   s.version         = "2.0.4"
-  s.summary         = "FirebaseIntegration iOS SDK"
+  s.summary         = "VKIDBridge iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
   s.authors         = 'YaYaWan'
@@ -10,16 +10,18 @@ Pod::Spec.new do |s|
   s.swift_version   = '5.0'
   s.static_framework = true
   s.source          = { :git => "https://github.com/LorrestGump/cksdk-ios-master.git", :tag => s.version.to_s }
-  s.source_files = 'Integrations/FirebaseIntegration/**/*.{h,m,swift}'
-  s.ios.deployment_target = '12.0'
+  s.source_files    = 'Integrations/VKIDBridge/**/*.{h,m,swift}'
+  s.ios.deployment_target = '13.0'
   s.ios.frameworks        = ['Foundation', 'UIKit']
 
+  s.dependency 'VKID', '~> 2.2'
+
   spec.resource_bundles = {
-    'FirebaseIntegration-Resources' => ['Integrations/FirebaseIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+    'VKIntegration-Resources' => ['Integrations/VKIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
   }
 
-  s.dependency 'CKSDKProtocalKit'
-  s.dependency 'FirebaseAnalytics'
-  s.dependency 'FirebaseMessaging'
+
+  # s.pod_target_xcconfig = { 'DEFINES_MODULE' => 'YES', 'SWIFT_INCLUDE_PATHS' => '$(inherited)' }
+  # s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
 
 end

@@ -1,8 +1,8 @@
 //
-//  VKIDBridge.swift
-//  VKID
+//  VKBridge.swift
+//  VKBridge
 //
-//  Created by 1234 on 2024/3/28.
+//  Created by LorrestGump on 2025/12/23.
 //
 
 import Foundation
@@ -10,11 +10,12 @@ import UIKit
 import VKID
 
 
-@objc public class VKIDBridge : NSObject{
+//@objc public class VKIDBridge : NSObject{
+@objc public class VKIDInterface : NSObject{
     
     private var vkid : VKID?
     
-@objc    public func config(clientId:NSString,clientSecret:NSString){
+@objc public func config(clientId:NSString,clientSecret:NSString){
         do {
 //            let vkid = try VKID(
 //                config: Configuration(
@@ -39,7 +40,7 @@ import VKID
     
     
 //@objc    public func authorize(complete:@escaping (Int,String) -> Void){
-//    
+//
 //    self.vkid!.authorize(
 //        using: .uiViewController((UIApplication.shared.keyWindow?.rootViewController)!)
 //       ) { result in

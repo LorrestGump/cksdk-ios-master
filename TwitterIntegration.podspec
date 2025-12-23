@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name            = "TwitterIntegration"
-  s.version         = "2.0.3"
+  s.version         = "2.0.4"
   s.summary         = "TwitterIntegration iOS SDK"
   s.homepage        = "http://github.com/LorrestGump/cksdk-ios-master"
   s.license         = { :type => 'Proprietary', :text => 'Copyright 2018 CKSDK Ltd. All rights reserved.'}
@@ -16,6 +16,10 @@ Pod::Spec.new do |s|
 
   s.dependency 'CKSDKProtocalKit'
   s.dependency 'TwitterKit5'
+
+  spec.resource_bundles = {
+    'TwitterIntegration-Resources' => ['Integrations/TwitterIntegration/Resources/*.{xcassets,lproj,txt,xcprivacy,xcstrings}']
+  }
 
   # 关键配置
   s.pod_target_xcconfig = {
