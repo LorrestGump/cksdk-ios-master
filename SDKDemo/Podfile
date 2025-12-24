@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'SDKDemo' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for SDKDemo
+
+  # 必接
+  pod 'CKSDKCore'
+  pod 'CKSDKProtocalKit'
+  # 可选
+  pod 'AppsFlyerIntegration'
+  pod 'FirebaseIntegration'
+  pod 'AdMobIntegration'
+  pod 'FacebookIntegration'
+  pod 'TwitterIntegration'
+  pod 'NaverIntegration'
+  pod 'VKIntegration'
+  pod 'AppLovinIntegration'
+  
+  
+  # 暂不支持
+#  pod 'TopOnIntegration'
+
+end
