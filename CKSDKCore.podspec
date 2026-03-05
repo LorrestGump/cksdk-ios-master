@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   
   s.source          = { 
      :http => "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.1/CKSDKCore.xcframework.zip",
-     :sha256 => "4f6f88be32554fe707f5cb4177854cceb4230bb29d47bb83c7b8752759699f7c"
+     :sha256 => "be7681d003b26d74bacdda8cd8c9b281790052c310e4560b99d64e2544f57e0f"
   }
 
   s.ios.frameworks        = ['Foundation', 'UIKit', 'AdServices', 'AdSupport']

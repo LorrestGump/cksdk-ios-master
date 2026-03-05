@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   
   s.source          = { 
      :http => "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.1/CKAppLovin.zip",
-     :sha256 => "..."
+     :sha256 => "15153b078e2f5b39fa52568a4ce34c1761a82b8910db96e2af87738f66ed0867"
   }
 
   # s.ios.frameworks        = ['Foundation', 'UIKit']

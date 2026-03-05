@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.source          = { 
      :http => "https://github.com/LorrestGump/cksdk-ios-master/releases/download/2.1/CKNaver.zip",
-     :sha256 => "..."
+     :sha256 => "8172c61f0f34db5a06e7c0656e860d05de6a7561f8665a952616b738d198e3e9"
   }
 
   # s.ios.frameworks        = ['Foundation', 'UIKit']
