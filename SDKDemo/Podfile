@@ -9,17 +9,32 @@ target 'SDKDemo' do
 
   # 必接
   pod 'CKSDKCore'
-  pod 'CKSDKProtocalKit'
-  # 可选
-  pod 'AppsFlyerIntegration'
-  pod 'FirebaseIntegration'
-  pod 'AdMobIntegration'
-  pod 'FacebookIntegration'
-  pod 'TwitterIntegration'
-  pod 'NaverIntegration'
-  pod 'VKIntegration'
-  pod 'AppLovinIntegration'
   
+  # 可选
+  # AppsFlyer
+  pod 'AppsFlyerFramework', '~> 6.17.6'
+  # Firebase
+  pod 'FirebaseAnalytics', '~> 12.7.0'
+  pod 'FirebaseMessaging', '~> 12.7.0'
+  # GoogleAdMob
+  pod 'Google-Mobile-Ads-SDK', '~> 12.14.0'
+  pod 'GoogleUserMessagingPlatform', '3.1.0'
+  # Facebook
+  pod 'FBAEMKit', '18.0.2'
+  pod 'FBSDKCoreKit', '18.0.2'
+  pod 'FBSDKGamingServicesKit', '18.0.2'
+  pod 'FBSDKLoginKit', '18.0.2'
+  pod 'FBSDKShareKit', '18.0.2'
+  # Twitter
+  pod 'TwitterKit5', '~> 5.2.0'
+  # AppLovin
+  pod 'CKAppLovin'
+  # Naver
+  pod 'CKNaver'
+  # VK
+  pod 'VKIDManager'
+  
+
   
   # 暂不支持
 #  pod 'TopOnIntegration'

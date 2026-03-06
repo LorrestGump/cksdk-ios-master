@@ -136,7 +136,7 @@
 #if Naver
 - (void)showNaverBtnClick{
     NSLog(@"弹出Naver社区页");
-    [TMD showNaverHall];
+    [CKSDK showNaverHall];
 }
 #endif
 
@@ -144,7 +144,7 @@
 -(void)showAdBtnClick{
 #if AdMob
     NSLog(@"弹出谷歌广告视频");
-    [TMD showGoogleAd:@"ca-app-pub-4372624079541069/8759581368" callback:^(BOOL value) {
+    [CKSDK showGoogleAd:@"ca-app-pub-4372624079541069/8759581368" callback:^(BOOL value) {
         if(value){
             NSLog(@"广告已展示");
         }else{
@@ -154,7 +154,7 @@
 #endif
 #if AppLovin
     NSLog(@"弹出AppLovin广告视频");
-    [TMD showAppLovinAd:@"004155407d45e527" callback:^(BOOL value) {
+    [CKSDK showAppLovinAd:@"004155407d45e527" callback:^(BOOL value) {
         if(value){
             NSLog(@"广告已展示");
         }else{
@@ -173,7 +173,7 @@
 
 - (void)channelLoginBindCallbackSetBtnClick{
     // 非必接，设置Facebook绑定登录回调
-    [TMD setBindFacebookSuccessCallback:^{
+    [CKSDK setBindFacebookSuccessCallback:^{
         NSLog(@"Facebook登录绑定成功");
     }];
 }
@@ -181,7 +181,7 @@
 - (void)facebookInfoBtnClick{
     NSLog(@"点击获取Facebook用户信息按钮");
     // 非必接
-    [TMD facebookUserInfo:^(NSString *name, NSString *avatarUrl) {
+    [CKSDK facebookUserInfo:^(NSString *name, NSString *avatarUrl) {
         NSLog(@"Facebook用户名称：%@\n头像链接：%@",name,avatarUrl);
     }];
 }
@@ -189,7 +189,7 @@
 - (void)facebookShareBtnClick{
     NSLog(@"点击Facebook分享按钮");
     // 非必接
-    [TMD facebookShareWithContent:@"Hello!" result:^(BOOL value) {
+    [CKSDK facebookShareWithContent:@"Hello!" result:^(BOOL value) {
         if (value) {
             NSLog(@"Facebook分享成功");
         }else{
@@ -203,7 +203,7 @@
 - (void)showTopOnAdBtnClick{
     NSLog(@"弹出TopOn广告");
     // type 广告类型，0激励视频，1插屏，2横幅，3原生
-    [TMD showTopOnAdType:1 callback:^(BOOL value) {
+    [CKSDK showTopOnAdType:1 callback:^(BOOL value) {
         if (value) { // 视频已展示且播放完成，插屏或横幅已展示
             NSLog(@"广告已展示");
         }else{ // 广告加载失败或提前关闭
@@ -227,7 +227,7 @@
     NSLog(@"点击图片分享");
     // 非必接，上架国内游戏可能会用到
     // type 平台类型，0微信好友和朋友圈，1QQ好友，2新浪微博，3保存到相册
-    [TMD shareImage:[UIImage imageNamed:@"testImg.jpg"] type:2];
+    [CKSDK shareImage:[UIImage imageNamed:@"testImg.jpg"] type:2];
 }
 #endif
 
